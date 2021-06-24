@@ -80,6 +80,7 @@ public class PotionBase : MonoBehaviour
     //Parameters: Color
     void SetColor(ref Color color)
     {
+        //gets the mean color and clamps it within the bounds of color (0-255)
         basePotionColor.r = Mathf.Clamp(totalColor.x / reagents.Count, 0, 255);
         basePotionColor.g = Mathf.Clamp(totalColor.y / reagents.Count, 0, 255);
         basePotionColor.b = Mathf.Clamp(totalColor.z / reagents.Count, 0, 255);
